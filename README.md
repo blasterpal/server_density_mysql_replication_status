@@ -1,6 +1,6 @@
 #MySqlReplicationStatus Server Density Plugin
 
-Tested and simple MySQL replication status Server Density plugin that uses `mysql` client and the shell.
+Tested and simple MySQL replication status Server Density plugin that uses `mysql` client and the shell. Designed for alerting on replication status.
 
 #Metrics
 
