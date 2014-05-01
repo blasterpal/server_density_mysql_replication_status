@@ -25,12 +25,12 @@ Both of these metrics allows you to easily set thresholds in Server Density to a
 
 ##Installation
 
-# Copy `MySQLReplicationStatus.py` plugin to your `sd-agent` plugins folder (`/usr/bin/sd-agent/plugins`). Create the plugins folder if it doesn't exist.
+* Copy `MySQLReplicationStatus.py` plugin to your `sd-agent` plugins folder (`/usr/bin/sd-agent/plugins`). Create the plugins folder if it doesn't exist.
 
-# Add `mysql_status` section to your Server Density config.
+* Add `mysql_status` section to your Server Density config.
 
     [mysql_status]
     user: 'replication'
     password: 'password1'
 
-# Restart the agent.
+* Restart the agent.
