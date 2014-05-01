@@ -19,6 +19,7 @@ Both of these metrics allows you to easily set thresholds in Server Density to a
 
 ##Assumptions
 
+* Linux tested only.
 * Requires `mysql` in `$PATH`
 * You must set the user and password in your server density config file. This user must have SUPER or REPLICATION CLIENT privilege (so yes this script presumes a high level of access, but it runs on the DB server directly anyway).
 * It can write a temp file to `/tmp/slave.status`
