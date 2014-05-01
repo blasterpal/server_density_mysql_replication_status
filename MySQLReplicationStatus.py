@@ -34,7 +34,7 @@ class MysqlSlaveMonitor:
         user = self.agent_config['mysql']['user']
         password = self.agent_config['mysql']['password']
         command = "mysql -u%(user) -p%(password) -e 'SHOW SLAVE STATUS\G' > /tmp/slave.status" %  locals()
-        commands.getoutput(MYSQL_SLAVE_STATUS)
+        commands.getoutput(command)
         slave_io_status = commands.getoutput(SLAVE_IO).strip()
         slave_sql_status = commands.getoutput(SLAVE_SQL).strip()
         slave_secs_behind = commands.getoutput(SECS_BEHIND).strip()
